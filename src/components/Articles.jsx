@@ -20,27 +20,31 @@ const Articles = () => {
 
   console.log("component being rendered");
 
-  return (
-    <div id="article-list-container">
-      {articleList.map((element, index) => {
-        const currentKey = "article-" + index;
-        const articleUrl = "/articles/" + index;
-        console.log(currentKey);
-        return (
-          <div className="single-article-list-container">
-            <p className="article-title">
-              <a href={articleUrl}>{element.title}</a>
-            </p>
-            <p className="article-author">Author: {element.author}</p>
-            <p className="article-etc">Current Votes: {element.votes}</p>
-            <p className="article-etc">
-              # of Comments: {element.comment_count}
-            </p>
-          </div>
-        );
-      })}
-    </div>
-  );
+  if (isLoading) {
+    return <p className="loading">Loading...</p>;
+  } else {
+    return (
+      <div id="article-list-container">
+        {articleList.map((element, index) => {
+          const currentKey = "article-" + index;
+          const articleUrl = "/articles/" + index;
+          console.log(currentKey);
+          return (
+            <div className="single-article-list-container">
+              <p className="article-title">
+                <a href={articleUrl}>{element.title}</a>
+              </p>
+              <p className="article-author">Author: {element.author}</p>
+              <p className="article-etc">Current Votes: {element.votes}</p>
+              <p className="article-etc">
+                # of Comments: {element.comment_count}
+              </p>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
 };
 
 export default Articles;
