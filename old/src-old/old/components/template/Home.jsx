@@ -1,0 +1,1 @@
+// For now, just have a link to 2 pages on homepage: View All Articles (a page with ArticlesModule on it - no sidebar for now, that will be added later), and Example Single Article View (page with singleArticleModule, singleArticleSecondaryHeading - no sidebar for now, that will be added later)
