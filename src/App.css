@@ -37,6 +37,15 @@
   }
 }
 
+/* Start CSS */
+
+* {
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  transition: all 0.2s linear 0s;
+}
+
 .spacer {
   margin-bottom: 50px;
   border-top: 1px solid #ccc;

@@ -22,7 +22,7 @@ const Articles = () => {
       <div id="article-list-container">
         {articleList.map((element, index) => {
           const currentKey = "article-" + index;
-          const articleUrl = "/articles/" + index;
+          const articleUrl = "/articles/" + element.article_id;
           return (
             <div className="single-article-list-container">
               <p className="article-title">
