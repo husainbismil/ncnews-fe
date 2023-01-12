@@ -6,19 +6,14 @@ const Articles = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    console.log("useeffect running...");
     setIsLoading(true);
     fetch(`https://ncnews-server.onrender.com/api/articles/`)
       .then((res) => res.json())
       .then((data) => {
         setArticleList(data.articles);
         setIsLoading(false);
-        console.log("useeffect fetch done...");
-        console.log(data.articles);
       });
   }, []);
-
-  console.log("component being rendered");
 
   if (isLoading) {
     return <p className="loading">Loading...</p>;
@@ -28,7 +23,6 @@ const Articles = () => {
         {articleList.map((element, index) => {
           const currentKey = "article-" + index;
           const articleUrl = "/articles/" + index;
-          console.log(currentKey);
           return (
             <div className="single-article-list-container">
               <p className="article-title">
