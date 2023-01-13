@@ -286,6 +286,27 @@ a.redlink:hover {
   background-color: rgb(247, 243, 243);
 }
 
+p.article-etc {
+  font-size: 16px;
+  text-align: center;
+  padding-right: 6%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #f9ccce;
+  width: 120px;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  background-color: rgb(251, 244, 243);
+}
+
+p.article-etc:hover {
+  background-color: rgb(249, 189, 189);
+  cursor: pointer;
+  border: 1px solid #b31b20;
+}
+
 /* 
 MEDIA QUERIES SECTION >>>
 
@@ -344,7 +365,7 @@ MEDIA QUERIES SECTION >>>
     width: 85%;
   }
   .single-article-list-container {
-    min-height: 200px;
+    min-height: 185px;
   }
 }
 
@@ -356,6 +377,9 @@ MEDIA QUERIES SECTION >>>
   .single-article-container-inner-section-float,
   .article-info-summary {
     width: 80%;
+  }
+  .single-article-list-container {
+    min-height: 220px;
   }
 }
 
@@ -371,6 +395,9 @@ MEDIA QUERIES SECTION >>>
   .container-wrap {
     width: 550px;
   }
+  .single-article-list-container {
+    min-height: 200px;
+  }
 }
 
 /* TODO: needs layout adjustments for mobile layout, skipped for now */
@@ -379,6 +406,9 @@ MEDIA QUERIES SECTION >>>
   #main-wrap,
   .container-wrap {
     width: 480px;
+  }
+  p.article-title {
+    margin-top: 35px;
   }
 }
 
