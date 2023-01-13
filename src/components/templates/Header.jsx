@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import Hamburger from "hamburger-react";
 
 const Header = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <div id="header-wrap">
       <div id="header">
@@ -12,8 +15,13 @@ const Header = () => {
           </div>
 
           <div id="header-desktop-navmenu-wrap">
-            <Link to="/">Home</Link> |{" "}
-            <Link to="/articles">View All Articles</Link>
+            <div id="header-desktop-navmenu-inner-wrap">
+              <Link to="/">Home</Link> |{" "}
+              <Link to="/articles">View All Articles</Link>
+            </div>
+            <div id="header-mobile-burger-icon-wrap">
+              <Hamburger toggled={isOpen} toggle={setOpen} />
+            </div>
           </div>
         </div>
       </div>
