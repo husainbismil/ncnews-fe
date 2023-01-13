@@ -8,6 +8,10 @@ still need to make mobile layout, hamburger menu.
                 formatting/alignment similar to reddit{" "}
               </p> ##MOSTLY DONE
               
+
+              <div className="article-fw-fixedheader-votebuttons">
+          <span>vote buttons</span>
+        </div>
               
     REMAINING TODOES:
               
@@ -16,3 +20,5 @@ still need to make mobile layout, hamburger menu.
               change upvote icon color from blue to orange or sain
 
               complete hamburger menu so a lightbox fades in or a slider slides in from right like in react-hamburger
+
+              make the divs in the view All Articles page able to dynamically resize. right now some divs have a height that is too large. when time, do some experimenting with css to fix this. 

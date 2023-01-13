@@ -12,6 +12,7 @@
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "react-loading-icons": "^1.1.0",
+    "react-notifications": "^1.7.4",
     "react-router-dom": "^6.6.2",
     "react-scripts": "^5.0.1",
     "react-scroll-up": "^1.4.0",
