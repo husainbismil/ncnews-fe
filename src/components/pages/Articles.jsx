@@ -61,7 +61,6 @@ const Articles = () => {
                   <p className="article-title">
                     <a href={articleUrl}>{element.title}</a>
                   </p>
-                  <p className="article-etc">Current Votes: {element.votes}</p>
                   <p className="article-etc">
                     # of Comments: {element.comment_count}
                   </p>

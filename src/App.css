@@ -90,7 +90,7 @@ body {
 
 .single-article-list-container {
   width: 80%;
-  height: 300px;
+  min-height: 150px;
   background-color: #fff;
   margin: 0 auto;
   padding: 15px;
@@ -342,6 +342,9 @@ MEDIA QUERIES SECTION >>>
   .single-article-container-inner-section-float,
   .article-info-summary {
     width: 85%;
+  }
+  .single-article-list-container {
+    min-height: 180px;
   }
 }
 
