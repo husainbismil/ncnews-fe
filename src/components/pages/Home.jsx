@@ -15,12 +15,12 @@ const Home = () => {
             u/user.{" "}
           </h3>
           <p>
-            When done, this page will be similar to reddit, with a main section
-            and sidebar. The main section will have a create post widget, and a
-            complete module to view and sort a list of all articles, by default
-            sorted by most recently added. The sidebar section will have a mini
-            user profile section, a topics selector / topics menu, and a Latest
-            comments widget!
+            When done, this home page will be similar to reddit, with a main
+            section and sidebar. The main section will have a create post
+            widget, and a complete module to view and sort a list of all
+            articles, by default sorted by most recently added. The sidebar
+            section will have a mini user profile section, a topics selector /
+            topics menu, and a Latest comments widget!
           </p>
           <br />
           <h5>
