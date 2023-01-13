@@ -58,7 +58,8 @@ html {
 }
 
 .animated,
-a {
+a,
+p {
   transition: all 0.2s linear 0s;
 }
 
@@ -127,13 +128,22 @@ body {
   overflow: hidden;
 }
 
-#header-desktop-navmenu-wrap a {
+#header-desktop-navmenu-wrap a,
+a.redlink {
   color: #eb1c24;
   border-radius: 5px;
   padding: 10px;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-#header-desktop-navmenu-wrap a:hover {
+a.redlink {
+  padding: 3px;
+  text-decoration: none;
+}
+
+#header-desktop-navmenu-wrap a:hover,
+a.redlink:hover {
   background-color: rgb(246, 180, 180);
 }
 
@@ -204,7 +214,19 @@ body {
   font-size: 16px;
 }
 
-/* media queries for responsiveness */
+/* .article-info-summary:hover {
+  color: #bc2025;
+} */
+
+/* 
+MEDIA QUERIES SECTION >>>
+
+################################################################### 
+#                                                                 #
+#                                                                 #
+# media queries for responsiveness                                #
+#                                                                 #
+################################################################### */
 
 #header-mobile-burger-icon-wrap {
   visibility: hidden;

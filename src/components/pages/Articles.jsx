@@ -34,7 +34,13 @@ const Articles = () => {
           return (
             <div className="single-article-list-container">
               <p className="article-info-summary">
-                t/{element.topic} · Posted by u/{element.author}{" "}
+                <a href="#" className="redlink">
+                  t/{element.topic}
+                </a>{" "}
+                · Posted by{" "}
+                <a href="#" className="redlink">
+                  u/{element.author}
+                </a>{" "}
                 {relativeCreatedAt}
               </p>
               <p className="article-title">
