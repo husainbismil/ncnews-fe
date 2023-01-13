@@ -7,3 +7,5 @@
 <p>change Server to App</p>
 
 ## Welcome!
+
+Readme under construction. View the API repo here: https://github.com/husainbismil/ncnews-api/
