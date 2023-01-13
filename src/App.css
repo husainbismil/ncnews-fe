@@ -53,7 +53,7 @@
 }
 
 body {
-  background-color: #eee;
+  background-color: rgb(84, 84, 84);
 }
 
 .single-article-list-container {
@@ -65,10 +65,151 @@ body {
   margin-bottom: 20px;
   border-radius: 15px;
   border: 1px solid #ddd;
+  overflow: hidden;
 }
 
 .article-title {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 40px;
+}
+
+.article-title,
+.article-title a {
+  color: rgb(44, 44, 44);
+  text-decoration: none;
+}
+
+.article-title:hover,
+.article-title a:hover {
+  text-shadow: 1px 1px 5px red;
+  color: #000;
+}
+
+#header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+}
+
+#header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 20px;
+  flex-wrap: wrap;
+}
+
+#header a {
+  color: #ff0000;
+}
+
+#header-shadow {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 70px;
+  height: 5px;
+  background-color: #000;
+  opacity: 0.1;
+}
+#main-wrap,
+.container-wrap {
+  display: block;
+  width: 1224px;
+  margin: 0 auto;
+}
+
+#main-wrap {
+  padding-top: 100px;
+  background-color: rgb(248, 245, 245);
+}
+
+/* northcoders red: #EB1C24 */
+
+#header-logo-wrap {
+}
+
+.page-container {
+  padding: 15px;
+  padding-bottom: 50px;
+  min-height: 500px;
+  margin-bottom: 20px;
+}
+
+/* media queries for responsiveness */
+
+@media (max-width: 1350px) {
+  #main-wrap,
+  .container-wrap {
+    width: 1150px;
+  }
+}
+
+@media (max-width: 1300px) {
+  #main-wrap,
+  .container-wrap {
+    width: 1100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #main-wrap,
+  .container-wrap {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #main-wrap,
+  .container-wrap {
+    width: 900px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #main-wrap,
+  .container-wrap {
+    width: 800px;
+  }
+}
+
+@media (max-width: 900px) {
+  #main-wrap,
+  .container-wrap {
+    width: 700px;
+  }
+}
+
+@media (max-width: 800px) {
+  #main-wrap,
+  .container-wrap {
+    width: 600px;
+  }
+}
+
+/* TODO: needs layout adjustments for mobile layout, skipped for now */
+
+@media (max-width: 600px) {
+  #main-wrap,
+  .container-wrap {
+    width: 480px;
+  }
+}
+
+@media (max-width: 500px) {
+  #main-wrap,
+  .container-wrap {
+    width: 390px;
+  }
+}
+
+@media (max-width: 400px) {
+  #main-wrap,
+  .container-wrap {
+    width: 345px;
+  }
 }
