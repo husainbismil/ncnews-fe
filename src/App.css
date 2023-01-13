@@ -373,7 +373,7 @@ p.article-title.nohover {
 }
 
 div.single-article-list-container.article-page-container {
-  min-height: 520px;
+  min-height: 630px;
 }
 
 .article-etc.commentsbutton-singlearticle {
@@ -468,7 +468,7 @@ MEDIA QUERIES SECTION >>>
     min-height: 185px;
   }
   div.single-article-list-container.article-page-container {
-    min-height: 500px;
+    min-height: 580px;
   }
 }
 
@@ -484,6 +484,9 @@ MEDIA QUERIES SECTION >>>
   .single-article-list-container {
     min-height: 220px;
   }
+  div.single-article-list-container.article-page-container {
+    min-height: 600px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -492,7 +495,7 @@ MEDIA QUERIES SECTION >>>
     width: 600px;
   }
   div.single-article-list-container.article-page-container {
-    min-height: 550px;
+    min-height: 630px;
   }
 }
 
@@ -500,9 +503,6 @@ MEDIA QUERIES SECTION >>>
   #main-wrap,
   .container-wrap {
     width: 550px;
-  }
-  div.single-article-list-container.article-page-container {
-    min-height: 570px;
   }
 }
 
@@ -522,7 +522,7 @@ MEDIA QUERIES SECTION >>>
     margin-top: 150px;
   }
   div.single-article-list-container.article-page-container {
-    min-height: 600px;
+    min-height: 650px;
   }
 }
 
@@ -538,7 +538,7 @@ MEDIA QUERIES SECTION >>>
     margin-top: 190px;
   }
   div.single-article-list-container.article-page-container {
-    min-height: 700px;
+    min-height: 750px;
   }
 }
 
@@ -548,7 +548,7 @@ MEDIA QUERIES SECTION >>>
     width: 390px;
   }
   div.single-article-list-container.article-page-container {
-    min-height: 800px;
+    min-height: 880px;
   }
 }
 
@@ -558,6 +558,6 @@ MEDIA QUERIES SECTION >>>
     width: 345px;
   }
   div.single-article-list-container.article-page-container {
-    min-height: 900px;
+    min-height: 980px;
   }
 }
