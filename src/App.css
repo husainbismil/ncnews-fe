@@ -380,6 +380,33 @@ div.single-article-list-container.article-page-container {
   position: relative;
 }
 
+#footer {
+  background-color: rgb(46, 46, 46);
+  height: 250px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7), inset 0 0 30px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  overflow: hidden;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  margin: 0;
+  padding: 15px;
+}
+
+.footer-text-heading {
+  color: rgb(215, 215, 215);
+}
+
+.footer-text {
+  color: rgb(215, 215, 215);
+  font-size: 15px;
+}
+
+#footer-wrap {
+  background: rgba(0, 0, 0, 0.2);
+}
 /* 
 MEDIA QUERIES SECTION >>>
 

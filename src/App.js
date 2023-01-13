@@ -4,6 +4,7 @@ import Articles from "./components/pages/Articles";
 import Header from "./components/templates/Header";
 import Article from "./components/pages/Article";
 import Home from "./components/pages/Home";
+import Footer from "./components/templates/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/articles" element={<Articles />} />
         <Route path="/articles/:article_id" element={<Article />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
