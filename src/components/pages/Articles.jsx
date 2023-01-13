@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ScrollToTop from "react-scroll-up";
 
 const Articles = () => {
   const [numbers, setNumbers] = useState([1, 2, 3]);
@@ -19,10 +20,13 @@ const Articles = () => {
     return <p className="loading">Loading...</p>;
   } else {
     return (
-      <div id="article-list-container">
+      <div id="article-list-container" className="page-container">
+        <ScrollToTop showUnder={160}>
+          <img src="img/btn/stt.png" />
+        </ScrollToTop>
         {articleList.map((element, index) => {
           const currentKey = "article-" + index;
-          const articleUrl = "/articles/" + index;
+          const articleUrl = "/articles/" + element.article_id;
           return (
             <div className="single-article-list-container">
               <p className="article-title">

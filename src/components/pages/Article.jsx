@@ -1,5 +1,5 @@
-import { useParams } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Article = () => {
   const { article_id } = useParams();
@@ -17,10 +17,18 @@ const Article = () => {
   }, [article_id]);
 
   if (isLoading) {
-    return <p className="loading">Loading...</p>;
+    return (
+      <div className="page-container">
+        <p className="loading">Loading...</p>
+      </div>
+    );
   }
 
-  return <p>Title: {article.title}</p>;
+  return (
+    <div className="page-container">
+      <p>Title: {article.title}</p>
+    </div>
+  );
 };
 
 export default Article;
