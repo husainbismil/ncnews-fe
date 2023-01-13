@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import ScrollToTop from "react-scroll-up";
+import getRelativeTime from "../../utils/time";
 
 const Articles = () => {
   const [numbers, setNumbers] = useState([1, 2, 3]);
@@ -25,14 +26,20 @@ const Articles = () => {
           <img src="img/btn/stt.png" />
         </ScrollToTop>
         {articleList.map((element, index) => {
+          const relativeCreatedAt = getRelativeTime(
+            Date.parse(element.created_at)
+          );
           const currentKey = "article-" + index;
           const articleUrl = "/articles/" + element.article_id;
           return (
             <div className="single-article-list-container">
+              <p className="article-info-summary">
+                t/{element.topic} · Posted by u/{element.author}{" "}
+                {relativeCreatedAt}
+              </p>
               <p className="article-title">
                 <a href={articleUrl}>{element.title}</a>
               </p>
-              <p className="article-author">Author: {element.author}</p>
               <p className="article-etc">Current Votes: {element.votes}</p>
               <p className="article-etc">
                 # of Comments: {element.comment_count}

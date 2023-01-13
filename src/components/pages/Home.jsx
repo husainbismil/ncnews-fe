@@ -10,6 +10,9 @@ const Home = () => {
       </ScrollToTop>
       <div id="lipsum">
         <p>
+          Topic example: t/cooking, t/coding, t/football. User example: u/user.{" "}
+        </p>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           pulvinar eget mauris sed consequat. Cras imperdiet luctus consectetur.
           Sed eget quam ac augue lacinia dictum nec vitae metus. Aenean commodo,
