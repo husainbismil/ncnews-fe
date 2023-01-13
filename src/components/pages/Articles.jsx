@@ -19,7 +19,7 @@ const Articles = () => {
     return <p className="loading">Loading...</p>;
   } else {
     return (
-      <div id="article-list-container">
+      <div id="article-list-container" className="page-container">
         {articleList.map((element, index) => {
           const currentKey = "article-" + index;
           const articleUrl = "/articles/" + element.article_id;
