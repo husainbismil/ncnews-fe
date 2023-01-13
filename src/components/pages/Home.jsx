@@ -6,7 +6,7 @@ const Home = () => {
     <div className="page-container">
       <p className="loading">oi..</p>
       <ScrollToTop showUnder={160}>
-        <img src="img/stt.png" />
+        <img src="img/btn/stt.png" />
       </ScrollToTop>
       <div id="lipsum">
         <p>

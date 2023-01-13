@@ -6,7 +6,9 @@ const Header = () => {
       <div id="header">
         <div id="header-inner" className="container-wrap">
           <div id="header-logo-wrap">
-            <span>- NCNews -</span>
+            <a href="/">
+              <img src="/img/logo/ncfe-logo-h.png" />
+            </a>
           </div>
 
           <div id="header-desktop-navmenu-wrap">
