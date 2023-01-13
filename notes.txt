@@ -1,0 +1,18 @@
+TODO LIST: 
+
+still need to make mobile layout, hamburger menu. 
+
+
+<p>
+                todo for ARTICLES / task 4 section: upvote icons, image placeholder, make
+                formatting/alignment similar to reddit{" "}
+              </p> ##MOSTLY DONE
+              
+              
+    REMAINING TODOES:
+              
+              make tooltip text for the article list, so when you hover over '2 years ago' you get the full timestamp like how it is on reddit. 
+              
+              change upvote icon color from blue to orange or sain
+
+              complete hamburger menu so a lightbox fades in or a slider slides in from right like in react-hamburger

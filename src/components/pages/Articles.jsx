@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import ScrollToTop from "react-scroll-up";
+import getRelativeTime from "../../utils/time";
 
 const Articles = () => {
   const [numbers, setNumbers] = useState([1, 2, 3]);
@@ -17,7 +18,11 @@ const Articles = () => {
   }, []);
 
   if (isLoading) {
-    return <p className="loading">Loading...</p>;
+    return (
+      <div id="article-list-container" className="page-container">
+        <p className="loading">Loading...</p>
+      </div>
+    );
   } else {
     return (
       <div id="article-list-container" className="page-container">
@@ -25,18 +30,42 @@ const Articles = () => {
           <img src="img/btn/stt.png" />
         </ScrollToTop>
         {articleList.map((element, index) => {
+          const relativeCreatedAt = getRelativeTime(
+            Date.parse(element.created_at)
+          );
           const currentKey = "article-" + index;
           const articleUrl = "/articles/" + element.article_id;
           return (
             <div className="single-article-list-container">
-              <p className="article-title">
-                <a href={articleUrl}>{element.title}</a>
+              <p className="article-info-summary">
+                <a href="#" className="redlink">
+                  t/{element.topic}
+                </a>{" "}
+                · Posted by{" "}
+                <a href="#" className="redlink">
+                  u/{element.author}
+                </a>{" "}
+                {relativeCreatedAt}
               </p>
-              <p className="article-author">Author: {element.author}</p>
-              <p className="article-etc">Current Votes: {element.votes}</p>
-              <p className="article-etc">
-                # of Comments: {element.comment_count}
-              </p>
+              <div className="single-article-container-inner-section">
+                <div className="btn-article-votes-container">
+                  <p className="article-votes-inner-vote-btn">
+                    <a href="#">⬆️</a>
+                  </p>
+                  <p className="article-votes-inner-number">{element.votes}</p>
+                  <p className="article-votes-inner-vote-btn">
+                    <a href="#">⬇️</a>
+                  </p>
+                </div>
+                <div className="single-article-container-inner-section-float">
+                  <p className="article-title">
+                    <a href={articleUrl}>{element.title}</a>
+                  </p>
+                  <p className="article-etc">
+                    # of Comments: {element.comment_count}
+                  </p>
+                </div>
+              </div>
             </div>
           );
         })}

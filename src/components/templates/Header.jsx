@@ -16,8 +16,10 @@ const Header = () => {
 
           <div id="header-desktop-navmenu-wrap">
             <div id="header-desktop-navmenu-inner-wrap">
-              <Link to="/">Home</Link> |{" "}
-              <Link to="/articles">View All Articles</Link>
+              <div id="navmenu">
+                <Link to="/">Home</Link>
+                <Link to="/articles">View All Articles</Link>
+              </div>
             </div>
             <div id="header-mobile-burger-icon-wrap">
               <Hamburger toggled={isOpen} toggle={setOpen} />
