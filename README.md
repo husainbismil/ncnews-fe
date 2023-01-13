@@ -8,4 +8,4 @@
 
 ## Welcome!
 
-Readme under construction.
+Readme under construction. View the API repo here: https://github.com/husainbismil/ncnews-api/
