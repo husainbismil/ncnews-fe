@@ -4,14 +4,27 @@ import ScrollToTop from "react-scroll-up";
 const Home = () => {
   return (
     <div className="page-container">
-      <p className="loading">oi..</p>
+      <p className="loading">[under construction]</p>
       <ScrollToTop showUnder={160}>
         <img src="img/btn/stt.png" />
       </ScrollToTop>
       <div id="lipsum">
-        <p>
+        <h3>
           Topic example: t/cooking, t/coding, t/football. User example: u/user.{" "}
+        </h3>
+        <p>
+          When done, this page will be similar to reddit, with a main section
+          and sidebar. The main section will have a create post widget, and a
+          complete module to view and sort a list of all articles, by default
+          sorted by most recently added. The sidebar section will have a mini
+          user profile section, a topics selector / topics menu, and a Latest
+          comments widget!
         </p>
+        <br />
+        <h5>
+          Lipsum placeholder text below (see bottom right corner after scrollin
+          down to test Scroll To Top button )
+        </h5>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           pulvinar eget mauris sed consequat. Cras imperdiet luctus consectetur.
