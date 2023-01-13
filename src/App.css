@@ -440,6 +440,9 @@ MEDIA QUERIES SECTION >>>
   .single-article-list-container {
     min-height: 185px;
   }
+  div.single-article-list-container.article-page-container {
+    min-height: 500px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -460,6 +463,9 @@ MEDIA QUERIES SECTION >>>
   #main-wrap,
   .container-wrap {
     width: 600px;
+  }
+  div.single-article-list-container.article-page-container {
+    min-height: 550px;
   }
 }
 
