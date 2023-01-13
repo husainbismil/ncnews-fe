@@ -20,9 +20,11 @@ const Articles = () => {
 
   if (isLoading) {
     return (
-      <div id="article-list-container" className="page-container">
-        <p className="loading">Loading...</p>
-        <TailSpin />
+      <div id="main-wrap">
+        <div id="article-list-container" className="page-container">
+          <p className="loading">Loading...</p>
+          <TailSpin />
+        </div>
       </div>
     );
   } else {
