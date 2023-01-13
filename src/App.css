@@ -250,6 +250,13 @@ body {
   }
 }
 
+@media (max-width: 700px) {
+  #main-wrap,
+  .container-wrap {
+    width: 550px;
+  }
+}
+
 /* TODO: needs layout adjustments for mobile layout, skipped for now */
 
 @media (max-width: 600px) {
@@ -273,7 +280,7 @@ body {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 610px) {
   #header-mobile-burger-icon-wrap {
     visibility: visible;
     display: block;
